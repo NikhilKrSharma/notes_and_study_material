@@ -1,15 +1,14 @@
-# Classical ML Approaches
+# Linear Regression
 
-## Important Terms
-Regression, Classification, Clustering, 
+## 1. Important Terms
+Assumptions, Linear, Multiple, Polinomial, Ridge (L2), Laso (L1), Elastic Net, Linearity, Normality, Homoscedasticity, Multicolinearity, Error Distribution, MSE, RMSE, R<sup>2</sup>.
 
 
-## 1. Linear Regression
-### Resources
+## 2. Resources
 - [Analytics Vidhya - Linear Regression](https://www.analyticsvidhya.com/blog/2021/05/all-you-need-to-know-about-your-first-machine-learning-model-linear-regression/, 'Linear Regression')
 - [How to transform features into Normal/Gaussian Distribution](https://www.analyticsvidhya.com/blog/2021/05/how-to-transform-features-into-normal-gaussian-distribution/)
 
-### Quick Notes | Summary
+## 3. Quick Notes | Summary
 - **Types of Linear Regression**
     - **`Simple Linear Regression`**  
     In simple linear regression, there is only one independent variable that is used to predict the dependent variable.
@@ -73,7 +72,7 @@ Regression, Classification, Clustering,
             & = 1 - \frac{\text{Unexplained variation}}{\text{Total variation}}
         \end{align*}$$
   
-        ![R-squared formula](./media/r-squared-formula-2.png)
+        ![R-squared formula](../media/r-squared-formula-2.png)
 
       - **Adjusted R-Squared**  
         - It is the improvement to R squared. 
@@ -84,7 +83,7 @@ Regression, Classification, Clustering,
   
         - Adjusted R2 is always lower than R2.  
 
-        ![Adjusted R-squared Formula](./media/adjusted-r-squared.png)
+        ![Adjusted R-squared Formula](../media/adjusted-r-squared.png)
 
       - **Comprison**  
         - R-squared will stay the same when adding more predictors, even if they are not contributing meaningfully. It may give a falsely optimistic view of the model.
@@ -102,8 +101,3 @@ Regression, Classification, Clustering,
     It is the root of MSE i.e Root of the mean difference of Actual and Predicted values. RMSE penalizes the large errors whereas MSE doesn’t.
 
     $$\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2}$$
-
-
-
-
-## 2. Classification

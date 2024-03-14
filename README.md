@@ -1,5 +1,7 @@
-# notes_and_study_material
+# Notes and Study Materials
 This repo contains the my own notes and the selected study materials that I have found over the internet.
+
+1. [Regression](/quickRevision/quickRevisionRegression.md)
 
 # Data Science and Machine Learning Engineer Quick Revision
 
