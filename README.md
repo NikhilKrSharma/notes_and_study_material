@@ -2,6 +2,7 @@
 This repo contains the my own notes and the selected study materials that I have found over the internet.
 
 1. [Regression](/quickRevision/quickRevisionRegression.md)
+2. [Classification](/quickRevision/quickRevisionClassification.md)
 
 # Data Science and Machine Learning Engineer Quick Revision
 
