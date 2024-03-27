@@ -4,20 +4,20 @@ Various Metrices used  for classification problems.
 
 ## **[`Confusion Matrix`](https://www.k2analytics.co.in/classification-accuracy-auc-roc-curve/)**  
 
-   > **True/False** tells the truth of the prediction.  
-   > **Positive/Negative** tells the output of the model.
-   
-   ![Confustion Matrix](../media/confusionMatrix.png)  
+> **True/False** tells the truth of the prediction.  
+> **Positive/Negative** tells the output of the model.
 
-   - **`Positive`**: The phenomenon of our interest is called Positive.  
-      E.g. – In a Fraud Detection Model, we are interested in predicting fraud. The phenomenon of our interest is Fraud, as such, we will use the term Positive for actual fraudulent cases and Negative otherwise.
+![Confustion Matrix](../media/confusionMatrix.png)  
 
-   - **`True Positive`**: The actual positives correctly predicted as positive.
-  
-   - **`False Positive`**: Actual Negative, but predicted as positive.  
-  
-      > Total Positive = True Positive + True Negative  
-      > Total Negative = False Positive + False Negative
+- **`Positive`**: The phenomenon of our interest is called Positive.  
+   E.g. – In a Fraud Detection Model, we are interested in predicting fraud. The phenomenon of our interest is Fraud, as such, we will use the term Positive for actual fraudulent cases and Negative otherwise.
+
+- **`True Positive`**: The actual positives correctly predicted as positive.
+
+- **`False Positive`**: Actual Negative, but predicted as positive.  
+
+   > Total Positive = True Positive + True Negative  
+   > Total Negative = False Positive + False Negative
 
 ### **`Accuracy`**
 It is the ratio of correct predictions to total number of predictions.  
@@ -66,16 +66,57 @@ $$
 F1 = 2 \times \frac{precision * recall}{precision + recall}
 $$
 
+## **`AUC-ROC Curve`**  
+**Full Form**: AUC-ROC Curve stands for Area Under Curve – Receiver Operating Characteristics Curve.  
+- The ROC curve is a **visual representation** that showcases how well a **binary classifier** system can **diagnose**, or **discriminate** between, different classes **when the threshold for classification is changed**.
+- The discrimination threshold in the ROC curve definition refers to **probability**, the output of a binary classifier model.
+- This score can be used when we have imbalanced classes.  
+- It represents the degree or measure of separability of predictive models.
 
-<br>
+Steps to plot the ROC Curve are:  
+1. Decide a threshold cut-off.
+2. Classify the outcome to be POSITIVE or NEGATIVE. If the predicted probability is above the threshold cut-off then POSITIVE else NEGATIVE.
+3. Calculate **Sensitivity** (**Recall**-True Positive Rate) and **Specificity** (**RecallOfNegatives**- True Negative Rate)
+4. Repeat the steps 1 to 3 at least 15 to 20 times by varying the threshold between 0 to 1.
+5. Plot the graph of Sensitivity vs (1 – Specificity). Sensitivity be on Y-axis and (1 – Specificity) on X-axis. This plot is ROC Curve.
+   
+Let us say, we consider the threshold cut-off to be 0. If the predicted probability is greater than or equal to 0 then Positive else Negative. In this case, all observations will be classified as Positive. The Sensitivity (Recall) of the binary classifier model will be 1 and Specificity will be 0.
 
-______
+On the other extreme, if we consider the threshold cut-off to be 1. If the predicted probability is greater than 1 then Positive else Negative. Probability cannot be more than 1, as such, all the observations will be classified as Negative. The Specificity (True Negative Rate) of the model will be 1 and Sensitivity (True Positive Rate) will be 0.
 
-<br>
+Sensitivity and Specificity varies between 0 to 1 depending on the cut-off. 
 
-## [**`Rank Order Table and Kolmogrov Smirnov(K-S) Table, Gains Table and Lift Chart`**](https://www.k2analytics.co.in/7-important-model-performance-measures/)
+See the chart below. Chart Name:  
+   1. ROC (Receiver Operating Characteristics)
+   2. Sensitivity v/s Specificity
+   3. Positive Recall v/s Negative Recall  
 
-### **`Rank Order Table`**  
+![Sensitivity v/s Specificity](../media/ROC_sensitivityVsSpecificity.png)
+
+- **`Receiver Operating Characteristics (ROC)`** curve is a plot between Sensitivity (TPR) on the Y-axis and (1 – Specificity) on the X-axis. Shown below is the ROC Curve. The total area of the square in the plot = 1 * 1 = 1.
+  
+- **`Area Under Curve (AUC)`** is the proportion of area below the ROC Curve (blue curve in the graph shown below).
+
+![AUC-ROC Curve](../media/AUC-ROC_Curve.png)
+
+
+**`AUC Interpretation`**
+The value of AUC ranges from 0 to 1. The table below explains the interpretation of AUC value.
+| AUC Value Range | Interpretation  |
+|-----------------|-----------------|
+| >= 0.9          | Excellent Model |
+| 0.8 to 0.9      | Good Model      |
+| 0.7 to 0.8      | Fair Model      |
+| 0.6 to 0.7      | Poor Model      |
+| < 0.6           | Very Poor Model |
+
+
+
+
+##### [**`Rank Order Table and Kolmogrov Smirnov(K-S) Table, Gains Table and Lift Chart`**](https://www.k2analytics.co.in/7-important-model-performance-measures/)
+
+
+## **`Rank Order Table`**  
 Rank Order Table is a key model performance measure used to evaluate how well the model separates the binary classes, viz, Responder class from Non-Responders, Defaulters from Non-Defaulters, Churners from Non-Churners, etc.  
 1. **Predict Probability**: Apply the predictive model on the labeled data. Predict the probability of each record using the model.  
 2. **Rank (Decile) the data**  
@@ -106,7 +147,7 @@ The Rank Order table is very important because the implementation strategy of mo
 > From the above table, it is clear that overall profitability is just Rs. 18050. However, if we target the deciles 10 to 7 then the profitability is Rs. 59150/-. By targeting just 40% of the overall base we get 3.3X times higher profitability.
 
 
-### **`Kolmogorov Smirnov (K-S)`** 
+## **`Kolmogorov Smirnov (K-S)`** 
 - **The point of maximum separation is the K-S statistics.**
 - Wherever the value of KS is max, that valus is KS-statistics.
 - K-S Statistics measures how well the binary classifier model separates the two classes.
@@ -122,7 +163,7 @@ The Rank Order table is very important because the implementation strategy of mo
   - If the **K-S value is below 0.45** then, the model may have weak to moderate separation power.
   - If the **K-S value exceeds 0.7** then, there is a risk of **overfitting** and one should be cautious. It is advisable to do a stringent quality check of calculations, assumptions, hypothesis, data, etc before accepting the model having K-S of 0.7 or more.
   
-### **`Gains Table & Lift Chart`**  
+## **`Gains Table & Lift Chart`**  
 - Gains table and Lift chart are used to measure how much gain/lift we can expect by using a predictive model vis-a-vis not using the model. 
 - Lift is calculated by taking a ratio of model strategy success rate to a random strategy success rate.
 - **Lift Calculation**
@@ -148,6 +189,12 @@ The Rank Order table is very important because the implementation strategy of mo
 
  
 
+## **`Concordance`**  
+[TBD](https://www.k2analytics.co.in/concordance-gini-and-goodness-of-fit/)
+## **`Gini`**  
+[TBD](https://www.k2analytics.co.in/concordance-gini-and-goodness-of-fit/)
+## **`Goodness of Fit`**  
+[TBD](https://www.k2analytics.co.in/concordance-gini-and-goodness-of-fit/)
 
 
 
