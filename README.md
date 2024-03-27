@@ -12,12 +12,13 @@ This repo contains my own curated notes and selected study materials that I have
 6. [Scorecard](./quickRevision/scorecard.md)
 7. [Feature Selection](./quickRevision/featureSelection.md)
 8. [Data Cleaning](./quickRevision/dataCleaning.md)
-9. [Missing Value Treatment](./quickRevision/missingValueTreatement.md)
+9. [Missing Value Treatment](./quickRevision/missingValue.md)
 10. [Hyper Parameter Tuning](./quickRevision/hyperParameterTuning.md)
 11. [Git Refresher](./quickRevision/gitRefresher.md)
 12. [SQL Refresher](./quickRevision/sqlRefresher.md)
-13. [Big Data](./quickRevision/bigData.md)
-14. [Cloud](./quickRevision/cloud.md)
+13. [Python Environment](./quickRevision/pythonEnvironment.md)
+14. [Big Data](./quickRevision/bigData.md)
+15. [Cloud](./quickRevision/cloud.md)
 
 <br>
 

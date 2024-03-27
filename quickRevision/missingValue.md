@@ -1,4 +1,4 @@
-# Missing Value Treatment
+# Missing Value
 
 
 ## 1. Important Terms
