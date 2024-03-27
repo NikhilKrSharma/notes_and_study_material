@@ -1,4 +1,4 @@
-# Classification
+# Hyper Parameter Tuning
 
 
 ## 1. Important Terms

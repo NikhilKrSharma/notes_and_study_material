@@ -1,8 +1,25 @@
-# Notes and Study Materials
-This repo contains the my own notes and the selected study materials that I have found over the internet.
+# Notes and Study Materials 
+[Quick Notes](./quickNotes.md)
 
-1. [Regression](/quickRevision/quickRevisionRegression.md)
-2. [Classification](/quickRevision/quickRevisionClassification.md)
+
+This repo contains my own curated notes and selected study materials that I have created and also that I have found over the internet.
+
+1. [Regression](/quickRevision/regression.md)
+2. [Regression Metrices](/quickRevision/regressionMetrices.md)
+3. [Classification](/quickRevision/classification.md)
+4. [Classification Metrices](/quickRevision/classificationMetrices.md)
+5. [Multi-collinearity](./quickRevision/multicollinearity.md)
+6. [Scorecard](./quickRevision/scorecard.md)
+7. [Feature Selection](./quickRevision/featureSelection.md)
+8. [Data Cleaning](./quickRevision/dataCleaning.md)
+9. [Missing Value Treatment](./quickRevision/missingValueTreatement.md)
+10. [Hyper Parameter Tuning](./quickRevision/hyperParameterTuning.md)
+11. [Git Refresher](./quickRevision/gitRefresher.md)
+12. [SQL Refresher](./quickRevision/sqlRefresher.md)
+13. [Big Data](./quickRevision/bigData.md)
+14. [Cloud](./quickRevision/cloud.md)
+
+<br>
 
 # Data Science and Machine Learning Engineer Quick Revision
 

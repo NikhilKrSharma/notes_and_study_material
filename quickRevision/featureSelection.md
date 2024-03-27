@@ -1,4 +1,4 @@
-# Classification
+# Feature Selection
 
 
 ## 1. Important Terms

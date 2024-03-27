@@ -1,4 +1,4 @@
-# Classification
+# Missing Value Treatment
 
 
 ## 1. Important Terms

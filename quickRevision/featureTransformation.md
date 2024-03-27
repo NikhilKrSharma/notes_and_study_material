@@ -1,4 +1,4 @@
-# Classification
+# Feature Transformation
 
 
 ## 1. Important Terms
