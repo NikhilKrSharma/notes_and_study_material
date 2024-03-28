@@ -1,26 +1,28 @@
 # Notes and Study Materials 
-[Quick Notes](./quickNotes.md)
+### [~~~ Quick Notes ~~~](./quickNotes.md)
 
 
 This repo contains my own curated notes and selected study materials that I have created and also that I have found over the internet.
 
-1. [Regression](/quickRevision/regression.md)
-2. [Regression Metrices](/quickRevision/regressionMetrices.md)
-3. [Classification](/quickRevision/classification.md)
-4. [Classification Metrices](/quickRevision/classificationMetrices.md)
-5. [Multi-collinearity](./quickRevision/multicollinearity.md)
-6. [Scorecard](./quickRevision/scorecard.md)
-7. [Feature Selection](./quickRevision/featureSelection.md)
-8. [Data Cleaning](./quickRevision/dataCleaning.md)
-9. [Missing Value Treatment](./quickRevision/missingValue.md)
-10. [Hyper Parameter Tuning](./quickRevision/hyperParameterTuning.md)
-11. [Git Refresher](./quickRevision/gitRefresher.md)
-12. [SQL Refresher](./quickRevision/sqlRefresher.md)
-13. [Python Environment](./quickRevision/pythonEnvironment.md)
-14. [Big Data](./quickRevision/bigData.md)
-15. [Cloud](./quickRevision/cloud.md)
+1. [Regression](./quickRevision/regression.md)
+2. [Regression Metrices](./quickRevision/regressionMetrices.md)
+3. [Classification](./quickRevision/classification.md)
+4. [Classification Metrices](./quickRevision/classificationMetrices.md)
+5. [Gradient Descent](./quickRevision/gradientDescent.md)
+6. [Multi-collinearity](./quickRevision/multicollinearity.md)
+7. [Scorecard](./quickRevision/scorecard.md)
+8. [Feature Selection](./quickRevision/featureSelection.md)
+9. [Data Cleaning](./quickRevision/dataCleaning.md)
+10. [Missing Value Treatment](./quickRevision/missingValue.md)
+11. [Hyper Parameter Tuning](./quickRevision/hyperParameterTuning.md)
+12. [Git Refresher](./quickRevision/gitRefresher.md)
+13. [SQL Refresher](./quickRevision/sqlRefresher.md)
+14. [Python Environment](./quickRevision/pythonEnvironment.md)
+15. [Big Data](./quickRevision/bigData.md)
+16. [Cloud](./quickRevision/cloud.md)
 
 <br>
+
 
 # Data Science and Machine Learning Engineer Quick Revision
 

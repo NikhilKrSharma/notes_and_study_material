@@ -1,10 +1,10 @@
 # Big Data
 
 
-## 1. Important Terms
+## Important Terms
 
 
-## 2. Resources
+## Resources
 
 
-## 3. Quick Notes | Summary
+## Quick Notes | Summary

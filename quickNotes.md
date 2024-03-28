@@ -1,10 +1,76 @@
 # Quick Notes
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+# Handy Code Snippets
+
+<details>
+    <summary>Animation</summary>
+    import matplotlib.pyplot as plt
+    import matplotlib.animation as animation
+
+    # Generate Animation
+    # Set the plot up
+    fig = plt.figure()
+    ax = plt.axes()
+    plt.title('Sale Price vs Living Area')
+    plt.xlabel('Living Area in square feet (normalised)')
+    plt.ylabel('Sale Price ($)')
+    plt.scatter(x[:,1], y, color='red')
+    line, = ax.plot([], [], lw=2)
+    annotation = ax.text(-1, 700000, '')
+    annotation.set_animated(True)
+    plt.close()
+
+    # Generate the animation data
+    def init():
+        line.set_data([], [])
+        annotation.set_text('')
+        return line, annotation
+
+    # Animation function. This is called sequentially
+    def animate(i):
+        x = np.linspace(-5, 20, 1000)
+        y = past_thetas[i][1]*x + past_thetas[i][0]
+        line.set_data(x, y)
+        annotation.set_text('Cost = %.2f e10' % (past_costs[i]/10000000000))
+        return line, annotation
+
+    anim = animation.FuncAnimation(fig, animate, init_func=init, frames=300, interval=0, blit=True)
+    anim.save('animation.gif', writer='imagemagick', fps = 30)
+
+
+    # Display the animation...
+    import io
+    import base64
+    from IPython.display import HTML
+
+    filename = 'animation.gif'
+
+    video = io.open(filename, 'r+b').read()
+    encoded = base64.b64encode(video)
+    HTML(data='''<img src="data:image/gif;base64,{0}" type="gif" />'''.format(encoded.decode('ascii')))
+</details>
+
+<details>
+    <summary>Text to be shown along the expand button</summary>
+    Main text goes here which will be displayed when the  user clicks on the expand button.
+</details>
 
 
 
-
-
+<br>
+<br>
+<br>
 
 # From RAMIT
 One of the main issues in learning LLMs is the lack of structured course on what needs to be learned. Below is the path I followed to gain some insights into LLMs. 
