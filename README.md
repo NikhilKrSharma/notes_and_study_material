@@ -106,9 +106,7 @@ This repo contains my own curated notes and selected study materials that I have
 ## 9. Version Control:
 ### Git:
 - Utilize Git for version control and collaboration.
-
-### GitHub/GitLab:
-- Host and manage repositories on GitHub or GitLab.
+- Host and manage repositories on GitHub.
 
 ## 10. Big Data and Cloud Platforms:
 ### Hadoop Ecosystem:
