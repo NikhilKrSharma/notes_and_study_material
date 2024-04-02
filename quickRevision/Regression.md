@@ -32,7 +32,7 @@ Assumptions, Linear, Multiple, Polinomial, Ridge (L2), Laso (L1), Elastic Net, L
 
 - **Assumptions of Linear Regression**
     - **`Linearity`**  
-    It states that the dependent variable Y should be linearly related to independent variables. This assumption can be checked by plotting a scatter plot between both variables.
+    It states that the independent variable X should be linearly related to the independent variable Y. This assumption can be checked by plotting a scatter plot between both variables.
 
     - **`Normality`**  
     The X and Y variables should be normally distributed. Histograms, KDE plots, Q-Q plots can be used to check the Normality assumption. 
@@ -53,10 +53,10 @@ Assumptions, Linear, Multiple, Polinomial, Ridge (L2), Laso (L1), Elastic Net, L
 
 ## Cost Function of Regression Model
 The cost function is the objective function that we want to minimize in order to find the best parameters for our regression model. The cost function is a measure of the error between actual values and the predicted values in our regression model. 
-$$
-J(\beta) = \frac{1}{2} * \sum_{i=1}^{n}(y_i - \hat{y}_n)^2
-$$
 
+$$
+\text{J}(\beta) = \frac{1}{2} * \sum_{i=1}^{n}(y_i - \hat{y}_n)^2
+$$
 #### Q. What is the purpose of squaring the difference
 If we did not include the square term here, then the error terms would simply cancel each other out, and hence the cost function will be equal 0, indicating a perfect fit but its not the case in reality.
 
