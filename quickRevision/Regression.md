@@ -58,7 +58,7 @@ $$
 \text{J}(\beta) = \frac{1}{2} * \sum_{i=1}^{n}(y_i - \hat{y}_n)^2
 $$
 #### Q. What is the purpose of squaring the difference
-If we did not include the square term here, then the error terms would simply cancel each other out, and hence the cost function will be equal 0, indicating a perfect fit but its not the case in reality.
+If we did not include the square term here, then the error terms would simply cancel each other out, and hence the cost function will be equal 0, indicating a perfect fit which is not the case in reality.
 
 #### Q. Squaring versus taking absolute value
 1. Taking the absolute value $\mid y_i -\hat{y}_i\mid$ does remove negative differences.

@@ -12,17 +12,18 @@ Various Metrices used  for classification problems.
 - **`Positive`**: The phenomenon of our interest is called Positive.  
    E.g. – In a Fraud Detection Model, we are interested in predicting fraud. The phenomenon of our interest is Fraud, as such, we will use the term Positive for actual fraudulent cases and Negative otherwise.
 
-- **`True Positive`**: The actual positives correctly predicted as positive.
+- **`True Positive`**: `Actual` `positives` `correctly` `predicted` `as` `positive`.
 
-- **`False Positive`**: Actual Negative, but predicted as positive.  
+- **`False Positive`**: `Actual` `Negative`, `but` `predicted` `as` `positive`.  
 
-   > Total Positive = True Positive + True Negative  
-   > Total Negative = False Positive + False Negative
+   > Total Positive (in Prediction) = True Positive + True Negative  
+   > Total Negative (in Prediction) = False Positive + False Negative
 
 ### **`Accuracy`**
 It is the ratio of correct predictions to total number of predictions.  
+
 $$
-\text{Accuracy}= \frac{\text{True Positive}+\text{True Negative}}{\text{Total Observation}}
+\text{Accuracy}=\frac{\text{True Positive}+\text{True Negative}}{\text{Total Observation}}
 $$
 
 ### **`Precision`**
@@ -39,10 +40,10 @@ $$
 $$
   
 ### **`Recall/Sensitivity (True Positive Rate)`**
-Recall is an important metrics used to evaluate the performance of classification models, especially in scenarios where the classes are **imbalanced**.
-- Recall, also known as sensitivity or true positive rate. 
+Recall is an important metrics used to evaluate the performance of classification models, especially in scenarios where the **`classes are imbalanced`**.
+- **`Recall`**, also known as **`sensitivity`** or **`true positive rate`**. 
 - It is the ratio of true positive predictions to the total number of actual positive instances in the dataset.
-- E.g., Out of all the **`1`** how many our model has predicted as **`1`**.
+- E.g., Out of all the **`1`** in the entire dataset how many our model has predicted as **`1`**.
 
 **`Note`**: It's important to note that **`precision`** and **`recall`** are often inversely related; improving one may lead to a decrease in the other. Therefore, finding the right balance between precision and recall is crucial depending on the specific requirements of the task at hand.
 

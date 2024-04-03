@@ -43,7 +43,7 @@ R^2 & = \frac{TSS - RSS}{TSS} \\
 ![Adjusted R-squared Formula](../media/adjusted-r-squared.png)
 
 #### **Comprison**  
-- R-squared will stay the same when adding more predictors, even if they are not contributing meaningfully. It may give a falsely optimistic view of the model.
+- R-squared may increase when adding more predictors, even if they are not contributing meaningfully. This can lead to a falsely optimistic view of the model's performance, especially if the additional predictors introduce overfitting.
 
 - Adjusted R-squared is more conservative and will decrease if additional variables do not contribute to the model’s explanatory power.
 
