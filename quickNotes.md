@@ -1,5 +1,9 @@
 # Quick Notes
 
+
+
+### Bucket (To be finished)
+1. [AI – 4 Every 1](https://youtu.be/jSgdL1zX4h8?t=21117)
 <br>
 <br>
 <br>

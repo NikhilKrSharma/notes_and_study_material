@@ -32,10 +32,9 @@ $$
 \sigma(z) = \frac{e^z}{1+e^{z}} = \frac{1}{1+e^{-z}}
 $$
 
+<br>
 
-
-
-
+For **`logistic regression`**, the **`cost function`** is derived using the notion of **`maximum likelihood`**.
 
 
 
