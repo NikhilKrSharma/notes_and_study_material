@@ -9,7 +9,9 @@
 
 ## Quick Notes | Summary
 ### **`Bias`**  
-It refers to the error introduced by approximating a real-world problem with a simplified model. It represents the difference between the average prediction of our model and the correct value which we are trying to predict.  
+High bias means the model is too simple and cannot capture the underlying structure of the data, leading to systematic errors. 
+
+In simpler terms, bias is like **`underfitting`** - the model is too simple and misses important patterns. 
 
 **Characteristics**
 - High bias models are simplistic and tend to **`underfit`** the data. They may overlook underlying patterns, resulting in poor performance on both training and testing data.
@@ -21,7 +23,9 @@ It refers to the error introduced by approximating a real-world problem with a s
 
 
 ### **`Variance`**  
-It measures the variability of model predictions for a given data point. It indicates how much the predictions for a given point vary across different training datasets.  
+High variance indicates that the model is overly sensitive to fluctuations in the training data and captures noise along with the underlying patterns.  
+
+In simpler terms, variance is like **`overfitting`** - the model captures noise along with the patterns, making it perform well on the training data but poorly on new, unseen data.
 
 **Characteristics**
 - High variance models are complex and tend to **overfit** the training data. They capture noise or random fluctuations in the training data, leading to poor generalization performance on unseen data.
