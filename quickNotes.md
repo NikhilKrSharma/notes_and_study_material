@@ -4,6 +4,41 @@
 
 ### Bucket (To be finished)
 1. [AI – 4 Every 1](https://youtu.be/jSgdL1zX4h8?t=21117)
+2. **`Softmax`**  
+Softmax is a function used in machine learning, particularly in neural networks. It takes a vector of real numbers and transforms it into a probability distribution for multiple categories. Here's a breakdown of what it does:
+
+    Input: Imagine you have a bunch of numbers, representing scores for different categories. These scores can be positive, negative, or even greater than one.
+
+    Output: Softmax turns those scores into probabilities between 0 and 1, where all the probabilities add up to 1. This makes it ideal for situations where you want to predict the most likely category out of several options.
+
+    Note:
+    1. Softmax is similar to the logistic function, but for multiple dimensions (multiple categories).  
+    2. It's also called "softargmax" because it gives a soft version of the argmax function, which simply picks the element with the highest value. Softmax gives you a probability distribution over all the elements.
+    3. [Learning Resource](https://www.ruder.io/word-embeddings-softmax/)
+
+    ![SoftMax](./media/softmax.jpg)
+
+
+3. **`Logarthms`**   
+    Imagine you have a giant calculator that can only do one thing: raise numbers to powers. That's exponentiation. For example, you put in 2 and 3, and it spits out 8 (because 2 raised to the power of 3 is 8).  
+    
+    Now, what if you wanted to do the opposite? What if you have the answer (8) and want to know what number you have to raise 2 to get that answer (8)? That's where logarithms come in.  
+    
+    Logarithms are like the "undo button" for exponents. They tell you what exponent you need to use to get a certain answer. In this case, the logarithm of 8 to base 2 (written as log2(8)) is 3. Because 2 raised to the power of 3 (3) equals 8.  
+
+    **There are two common types of logarithms:**  
+    - **Common logarithm (base 10)**: This is written simply as "**`log(x)`**" and uses 10 as the base. It's frequently used in science and engineering.  
+  
+    - **Natural logarithm (base e)**: This is written as "**`ln(x)`**" and uses a special number called "e" (approximately 2.718) as the base. It's particularly important in calculus and other areas of mathematics.
+
+    **Some important logarithm properties:**  
+    - Product Rule: $log(xy) = log(x) + log(y)$
+    - Quotient Rule: $log(\frac{x}{y}) = log(x) - log(y)$
+    - Power Rule: $log(a^m) = m * log(a)$
+    - Change of Base Rule: $log_b(x) = \frac{log_c(x)}{log_c(b)}$, where $c$ is the new base that we picked.
+    - Logarithm of 1: $log_b(1) = 0$, for any base b where $b ≠ 1$.
+    - Logarithm of the Base: $log_b(b) = 1$ (the logarithm of the base b to itself is always 1).
+
 <br>
 <br>
 <br>
