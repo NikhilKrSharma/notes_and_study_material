@@ -1,5 +1,8 @@
 # Quick Notes
 
+# Bypass Medium paywall
+Append this at the start of any URL: https://freedium.cfd/
+
 
 
 ### Bucket (To be finished)

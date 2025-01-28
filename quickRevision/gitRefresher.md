@@ -37,9 +37,10 @@ git \<command> --help
 -  **git commit -m "commit message"** : make a new commit with given message
 -  **git push origin master** : send local commits to remote repository
 -  **git pull origin master** : get latest updates from remote repository
--  git rm  \<file> : remove file from source control
--  git diff | git diff -- staged  : compare files in working directory vs staged/indexed
--  git rm --cached \<fileName> : removes a file from the index, but keeps it in the working directory.
+-  **git rm  \<file>** : remove file from source control
+-  **git diff | git diff -- staged**  : compare files in working directory vs staged/indexed
+-  **git rm --cached \<fileName>** : removes a file from the index, but keeps it in the working directory.
+-  **git remote show origin** : Shows the remote URL of that particular git repo.
 
 
 #### Branching & Merging [Come back and redo this section]

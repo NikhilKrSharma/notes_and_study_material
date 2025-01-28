@@ -26,6 +26,9 @@ This repo contains my own curated notes and selected study materials that I have
 20. [Python Environment](./quickRevision/pythonEnvironment.md)
 21. [Big Data](./quickRevision/bigData.md)
 22. [Cloud](./quickRevision/cloud.md)
+23. [LLMs](./quickRevision/llms.md)
+24. [Others](./quickRevision/others.md)
+24. [RNNs-Seq2seq-Transformers](./quickRevision/rnn-seq2seq-transformers.md)
 
 <br>
 
