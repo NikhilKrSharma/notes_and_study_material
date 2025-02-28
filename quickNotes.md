@@ -1,5 +1,8 @@
 # Quick Notes
 
+# Important
+- [Annotated Research Papers](https://github.com/AakashKumarNain/annotated_research_papers)
+
 # Bypass Medium paywall
 Append this at the start of any URL: https://freedium.cfd/
 
@@ -142,3 +145,67 @@ Some interesting blogs on them:
 **Deployment**: Only one I have seen till now is AWS Bedrock. Haven’t gone through this part yet.
  
 Hope this helps someone who is trying to learn LLMs. There is a lot of interesting stuff happening in this space, so you have to keep yourself updated. There are a lot more resources I used, but could only find these from my history.
+
+
+<br>
+<br>
+<br>
+
+
+# Generative AI
+## Key Components of an MoE Model
+-  Experts
+   -  These are the sub-networks (neural networks) that specialize in solving particular aspects of the input space. Each expert focuses on different parts of the data or learns distinct patterns.
+   -  Example: In a language model, one expert might focus on syntax, another on semantics, and another on rare words.
+
+- Gating Network
+  - A small neural network that determines which experts to activate for a given input.
+  - It computes weights for the experts based on the input and activates only the top-k experts (based on the highest weights), making the computation sparse.
+
+- Sparse Activation
+  - Unlike fully dense models, where all parameters are used for every input, MoE activates only a small number of experts (e.g., 2 out of 100) for each input, saving computational resources while maintaining model capacity.
+
+- Combination of Outputs
+  - The outputs of the selected experts are combined (usually as a weighted sum based on the gating network's outputs) to produce the final result.
+
+
+## Workflow of an MoE Model
+- Input
+  - The input data (e.g., text or images) is fed into the model.
+
+- Gating Decision
+  - The gating network processes the input and assigns a weight to each expert. The top-k experts with the highest weights are selected.
+
+- Expert Execution
+  - Only the selected experts are activated, and they process the input independently.
+
+- Aggregation
+  - The outputs of the activated experts are aggregated (weighted sum or concatenation) to generate the final output.
+
+## Advantages of MoE Models
+- Scalability
+  - MoE models can have billions of parameters without requiring proportional increases in computational costs because only a small subset of experts is activated.
+
+- Efficiency
+  - Sparse activation ensures that the computation is focused on the most relevant parts of the model for a given input, reducing unnecessary calculations.
+
+- Specialization
+  - Experts can specialize in learning different patterns or aspects of the data, leading to improved performance on diverse tasks.
+
+- Flexibility
+  - MoE models can adapt to diverse inputs by dynamically routing them to the most appropriate experts.
+
+## Challenges in MoE Models
+- Load Balancing
+  - Ensuring that all experts are utilized effectively can be challenging. Without proper balancing, some experts may dominate, while others remain underused.
+
+- Training Instability
+  - The gating network and experts need to be trained jointly, which can lead to instability or mode collapse (where only a few experts dominate).
+
+- Overhead of Gating Network
+  - The gating network adds extra computation, which must be optimized to avoid bottlenecks.
+
+- Latency
+  - Sparsity can introduce latency due to irregular computations (e.g., selecting and routing data to specific experts).
+
+

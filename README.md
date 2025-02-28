@@ -29,6 +29,8 @@ This repo contains my own curated notes and selected study materials that I have
 23. [LLMs](./quickRevision/llms.md)
 24. [Others](./quickRevision/others.md)
 24. [RNNs-Seq2seq-Transformers](./quickRevision/rnn-seq2seq-transformers.md)
+25. [STT and tts](./quickRevision/stt-tts.md)
+26. [Transformers](./quickRevision/transformers.md)
 
 <br>
 
