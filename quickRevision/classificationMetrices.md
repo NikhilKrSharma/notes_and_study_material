@@ -12,9 +12,13 @@ Various Metrices used  for classification problems.
 - **`Positive`**: The phenomenon of our interest is called Positive.  
    E.g. – In a Fraud Detection Model, we are interested in predicting fraud. The phenomenon of our interest is Fraud, as such, we will use the term Positive for actual fraudulent cases and Negative otherwise.
 
-- **`True Positive`**: `Actual` `positives` `correctly` `predicted` `as` `positive`.
+- **`True Positive`**: Model predicted as Positive and prediction is True.
 
-- **`False Positive`**: `Actual` `Negative`, `but` `predicted` `as` `positive`.  
+- **`False Positive`**: Mode predicted as Positive but prediction is False.  
+
+- **`True Negative`**: Mode predicted as Negative and prediction is True.  
+
+- **`False Negatice`**: Mode predicted as Negative but prediction is False.  
 
    > Total Positive (in Prediction) = True Positive + True Negative  
    > Total Negative (in Prediction) = False Positive + False Negative
