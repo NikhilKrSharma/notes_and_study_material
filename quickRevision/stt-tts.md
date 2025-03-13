@@ -39,7 +39,11 @@
 
 
 ### Vocoder
-Early neural vocoders such as WaveNet, Char2Wav, WaveRNN directly take linguistic features as input and generate waveform. Later versions take mel-spectrograms as input and generate waveform. Since speech waveform is very long, autoregressive waveform generation takes much inference time. Thus, generative models such as Flow, GAN, VAE, and DDPM (Denoising Diffusion Probabilistic Model, Diffusion for short) are used in waveform generation.
+Early neural vocoders such as WaveNet, Char2Wav, WaveRNN directly take linguistic features as input and generate waveform. 
+
+Later versions take mel-spectrograms as input and generate waveform. 
+
+Since speech waveform is very long, autoregressive waveform generation takes much inference time. Thus, generative models such as Flow, GAN, VAE, and DDPM (Denoising Diffusion Probabilistic Model, Diffusion for short) are used in waveform generation.
 
 ## 2. Resources
 1. [Benchmarking open source and paid services for speech to text: an analysis of quality and input variety](https://www.frontiersin.org/journals/big-data/articles/10.3389/fdata.2023.1210559/full)
