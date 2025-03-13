@@ -20,8 +20,6 @@ Various Metrices used  for classification problems.
 
 - **`False Negatice`**: Mode predicted as Negative but prediction is False.  
 
-   > Total Positive (in Prediction) = True Positive + True Negative  
-   > Total Negative (in Prediction) = False Positive + False Negative
 
 ### **`Accuracy`**
 It is the ratio of correct predictions to total number of predictions.  
@@ -32,21 +30,23 @@ $$
 
 ### **`Precision`**
 
-Precision is an important metrics used to evaluate the performance of classification models, especially in scenarios where the classes are **imbalanced**.
-- Precision measures the **accuracy of total positive predictions**. 
-- It is the ratio of true positive predictions to the total number of positive predictions made by the classifier.
+Precision is an important metrics used to evaluate the performance of classification models, especially in scenarios where the **classes are imbalanced**.
+
+**Out of all the positive predictions made by the model, how many are actually True.**
+
 - E.g., Out of all the ones which model has predicted as **`1`** how many actually are **`1`**. 
 - It is a measure of the correctness of positive.
-- It is defined as the ratio of correctly predicted positive observations to the total predicted positives.
 
 $$
 \text{Precision} = \frac{\text{True Positve}}{\text{True Positve + False Positve}}
 $$
   
 ### **`Recall/Sensitivity (True Positive Rate)`**
-Recall is an important metrics used to evaluate the performance of classification models, especially in scenarios where the **`classes are imbalanced`**.
+Recall is an important metrics used to evaluate the performance of classification models, especially in scenarios where the **classes are imbalanced**.
+
+**Out of all the positive cases in the dataset, how many are correctly predicted by the model.**
+
 - **`Recall`**, also known as **`sensitivity`** or **`true positive rate`**. 
-- It is the ratio of true positive predictions to the total number of actual positive instances in the dataset.
 - E.g., Out of all the **`1`** in the entire dataset how many our model has predicted as **`1`**.
 
 **`Note`**: It's important to note that **`precision`** and **`recall`** are often inversely related; improving one may lead to a decrease in the other. Therefore, finding the right balance between precision and recall is crucial depending on the specific requirements of the task at hand.
