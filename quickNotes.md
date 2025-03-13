@@ -25,12 +25,14 @@ Softmax is a function used in machine learning, particularly in neural networks.
     ![SoftMax](./media/softmax.jpg)
 
 
-3. **`Logarthms`**   
-    Imagine you have a giant calculator that can only do one thing: raise numbers to powers. That's exponentiation. For example, you put in 2 and 3, and it spits out 8 (because 2 raised to the power of 3 is 8).  
+3. **`Logarithms`**   
+    Imagine a giant calculator that can only do one thing: raise numbers to powers. That's **exponentiation**. 
     
-    Now, what if you wanted to do the opposite? What if you have the answer (8) and want to know what number you have to raise 2 to get that answer (8)? That's where logarithms come in.  
+    For example, you put in 2 and 3, and it spits out 8 (because 2 raised to the power of 3 is 8).  
     
-    Logarithms are like the "undo button" for exponents. They tell you what exponent you need to use to get a certain answer. In this case, the logarithm of 8 to base 2 (written as log2(8)) is 3. Because 2 raised to the power of 3 (3) equals 8.  
+    Now, what if you wanted to do the **opposite**? What if you have the answer (8) and want to know what number you have to raise 2 to get that answer (8)? That's where logarithms come in.  
+    
+    **Logarithms are like the "undo button" for exponents.** They tell you what exponent you need to use to get a certain answer. In this case, the logarithm of 8 to base 2 (written as log2(8)) is 3. Because 2 raised to the power of 3 (3) equals 8.  
 
     **There are two common types of logarithms:**  
     - **Common logarithm (base 10)**: This is written simply as "**`log(x)`**" and uses 10 as the base. It's frequently used in science and engineering.  
@@ -138,7 +140,6 @@ Once you have the basics in place, it is time to shift gears:
 - QLoRA -> Quantized Low-Rank Adaptation  
 
 Some interesting blogs on them:  
-- https://abvijaykumar.medium.com/fine-tuning-llm-parameter-efficient-fine-tuning-peft-lora-qlora-part-1-571a472612c4
 - https://abvijaykumar.medium.com/fine-tuning-llm-parameter-efficient-fine-tuning-peft-lora-qlora-part-2-d8e23877ac6f
 - https://cameronrwolfe.substack.com/p/easily-train-a-specialized-llm-peft  
 
