@@ -1,7 +1,3 @@
----
-math: true
----
-
 # Classification
 
 
